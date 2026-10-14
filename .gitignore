@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+myvenv/
+
+# Secrets — NEVER commit
+.env
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# uv
+uv.lock
+
+# Claude: local settings are ignored; project skills ARE tracked
+.claude/*
+!.claude/skills/

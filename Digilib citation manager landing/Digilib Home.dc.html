@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-f5260334-b4ed-4d2a-ade6-1555f103ba97/styles.css">
+<script src="_ds/organic-f5260334-b4ed-4d2a-ade6-1555f103ba97/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  @font-face { font-family: 'Suranna'; src: url('./uploads/Suranna-Regular.ttf') format('truetype'); font-weight: 400; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  body { font-size: 16px; }
+  .card-body { font-size: 15px; }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+</helmet>
+
+<div style="min-height:100vh; --font-heading:'Suranna', serif; --font-heading-weight:700; --color-bg:#ffffff; --color-surface:#f2f6fb; --color-text:#142a4a; --color-accent:#1e3a5f; --color-accent-2:#3b6ea5; --color-divider:color-mix(in srgb, #142a4a 16%, transparent); --color-neutral-100:#f7f9fb; --color-neutral-900:#101826; --color-accent-100:#eaf1f8; --color-accent-200:#cfe0ee; --color-accent-600:#16283f; --color-accent-700:#122238; --color-accent-800:#16283f; --color-accent-900:#0f1c2c; --color-accent-2-100:#eef4fa; --color-accent-2-200:#d7e6f3; --color-accent-2-800:#1f4368; background:var(--color-bg); color:var(--color-text);">
+
+  <nav class="nav" style="max-width:1280px; margin:0 auto; padding:var(--space-4) var(--space-6);">
+    <div class="nav-brand" style="display:flex; align-items:center; gap:10px; font-family:'Suranna', serif; font-size:26px; font-style:italic;">
+      <div style="width:32px; height:32px; border-radius:50%; background:var(--color-accent); display:flex; align-items:center; justify-content:center; flex:none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-bg)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+      </div>
+      Digilib
+    </div>
+    <a href="./Digilib Home.dc.html" aria-current="page">Home</a>
+    <a href="./Digilib Features.dc.html">Features</a>
+    <a href="./Digilib Setup.dc.html">Get started</a>
+    <a href="https://github.com/cars3/digilib-mcp" class="btn btn-primary" style="color:#ffffff;">GitHub</a>
+  </nav>
+
+  <section style="max-width:1280px; margin:0 auto; padding:var(--space-8) var(--space-6) var(--space-8); display:grid; grid-template-columns:1.1fr 0.9fr; gap:var(--space-8); align-items:start;">
+    <div style="animation:fadeUp 0.7s ease both; display:flex; flex-direction:column; gap:var(--space-4);">
+      <span class="tag tag-accent-2" style="display:inline-flex; width:max-content;">MCP tool for Claude</span>
+      <h1 style="font-size:clamp(38px,5vw,58px); margin:0;">Hi, I'm Digilib, your research assistant that never leaves the chat.</h1>
+      <p style="font-size:18px; opacity:0.85; max-width:520px; margin:0;">I can search academic papers and books across the sources you'd normally check one by one. Then I'll help you extract, cite and export them in APA or whatever format you need, right where you're already working.</p>
+      <div style="display:flex; gap:var(--space-3); flex-wrap:wrap;">
+        <a href="./Digilib Setup.dc.html" class="btn btn-primary" style="font-size:16px; padding:14px 30px;">Get started</a>
+        <a href="./Digilib Features.dc.html" class="btn btn-secondary" style="font-size:16px; padding:14px 30px; border-color:var(--color-text); color:var(--color-text);">See what it does</a>
+      </div>
+    </div>
+    <div style="border-radius:var(--radius-lg); overflow-y:auto; aspect-ratio:1/0.85; border:1px solid var(--color-divider); box-shadow:var(--shadow-md); background:#ffffff; padding:32px 34px; font-family:'Source Serif 4', Georgia, serif; font-size:13.5px; line-height:1.65; color:#20242c;">
+      <p style="font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--color-accent-2); margin:0 0 10px;">Exported from Digilib</p>
+      <h3 style="font-family:var(--font-heading); font-size:20px; margin:0 0 4px; color:var(--color-text);">Retrieval-Augmented Generation: A Literature Review</h3>
+      <p style="font-size:12px; color:#6b7280; margin:0 0 18px;">September 20, 2026</p>
+      <p style="font-weight:600; margin:0 0 8px;">Literature Review</p>
+      <ul style="margin:0 0 16px; padding-left:18px;">
+        <li style="margin-bottom:8px;"><strong>Foundations:</strong> Manning, Raghavan &amp; Schütze (2008) and Croft, Metzler &amp; Strohman (2009) supply the classical IR background that the retriever half of any RAG pipeline depends on.</li>
+        <li style="margin-bottom:8px;"><strong>Surveys:</strong> Fan et al. (2024) map retrieval-augmented LLMs; Peng et al. (2025) survey graph-structured RAG.</li>
+        <li style="margin-bottom:8px;"><strong>Evaluation:</strong> Es et al. (2024) introduce RAGAs; Salemi &amp; Zamani (2024) propose eRAG, judging retrieval by downstream effect on LLM output.</li>
+        <li style="margin-bottom:8px;"><strong>Benchmarking:</strong> Chen et al. (2024) build the RGB benchmark, finding models still struggle when retrieved context is noisy.</li>
+        <li style="margin-bottom:8px;"><strong>Adaptive retrieval:</strong> Jeong et al. (2024) propose Adaptive-RAG, routing queries by complexity.</li>
+        <li style="margin-bottom:8px;"><strong>Efficiency:</strong> Guo et al. (2025) present LightRAG, combining graph-based indexing with dual-level retrieval.</li>
+        <li style="margin-bottom:0;"><strong>Reliability:</strong> Zhang &amp; Zhang (2025) catalogue mitigation techniques for hallucinations across the RAG pipeline.</li>
+      </ul>
+      <p style="margin:0 0 16px;">Open themes: evaluation remains fragmented, retrieval noise is a persistent failure mode, and structured and adaptive retrieval are the most active directions.</p>
+      <p style="font-weight:600; margin:0 0 8px;">Scope</p>
+      <p style="margin:0 0 18px;">Recent (2024–2025) research on RAG, grounded by two foundational IR textbooks. Papers were selected from a Digilib search spanning OpenAlex, arXiv, Semantic Scholar and Crossref.</p>
+      <p style="font-weight:600; margin:0 0 8px;">References</p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Chen, J., Lin, H., Han, X., &amp; Sun, L. (2024). Benchmarking large language models in retrieval-augmented generation. <em>Proceedings of the AAAI Conference on Artificial Intelligence, 38</em>(16).</p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Croft, W. B., Metzler, D., &amp; Strohman, T. (2009). <em>Search engines: Information retrieval in practice.</em> Addison-Wesley.</p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Es, S., James, J., Espinosa-Anke, L., &amp; Schockaert, S. (2024). RAGAs: Automated evaluation of retrieval augmented generation. <em>EACL 2024 System Demonstrations.</em></p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Fan, W., Ding, Y., Ning, L., Wang, S., Li, H., Yin, D., Chua, T.-S., &amp; Li, Q. (2024). A survey on RAG meeting LLMs. <em>Proceedings of ACM SIGKDD 2024.</em></p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Guo, Z., Xia, L., Yu, Y., Ao, T., &amp; Huang, C. (2025). LightRAG: Simple and fast retrieval-augmented generation. <em>Findings of ACL: EMNLP 2025.</em></p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Jeong, S., Baek, J., Cho, S., Hwang, S. J., &amp; Park, J. C. (2024). Adaptive-RAG. <em>NAACL 2024.</em></p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Manning, C. D., Raghavan, P., &amp; Schütze, H. (2008). <em>Introduction to information retrieval.</em> Cambridge University Press.</p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Peng, B., Zhu, Y., Liu, Y., Bo, X., Shi, H., Hong, C., Zhang, Y., &amp; Tang, S. (2025). Graph retrieval-augmented generation: A survey. <em>ACM Transactions on Information Systems.</em></p>
+      <p style="font-size:12.5px; margin:0 0 8px;">Salemi, A., &amp; Zamani, H. (2024). Evaluating retrieval quality in retrieval-augmented generation. <em>ACM SIGIR 2024.</em></p>
+      <p style="font-size:12.5px; margin:0;">Zhang, W., &amp; Zhang, J. (2025). Hallucination mitigation for retrieval-augmented large language models: A review. <em>Mathematics, 13</em>(5), 856.</p>
+    </div>
+  </section>
+
+  <section style="max-width:1280px; margin:0 auto; padding:0 var(--space-6) var(--space-8);">
+    <div class="card elev-md" style="max-width:760px; padding:var(--space-6);">
+      <span class="card-kicker">The problem</span>
+      <p class="card-title" style="font-size:22px; margin:var(--space-2) 0 0;">Ten tabs, one paper. A search site, a books database, a citation generator, a formatter.</p>
+      <p class="card-body" style="font-size:15px; margin-top:var(--space-2);">Digilib brings all of that into one tool your AI assistant already has open, so you can search, use, cite and export real sources without switching context.</p>
+    </div>
+  </section>
+
+  <section style="max-width:1280px; margin:0 auto; padding:0 var(--space-6) var(--space-8); display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:var(--space-4);">
+    <div class="card elev-sm">
+      <span class="card-kicker">Extract</span>
+      <p class="card-title">Six sources, one query</p>
+      <p class="card-body">OpenAlex, arXiv, Semantic Scholar, Crossref, Open Library and Google Books, searched at once.</p>
+    </div>
+    <div class="card elev-sm">
+      <span class="card-kicker">Use</span>
+      <p class="card-title">Clean, deduplicated results</p>
+      <p class="card-body">Keywords get sharpened, results normalized and deduplicated before they reach you.</p>
+    </div>
+    <div class="card elev-sm">
+      <span class="card-kicker">Cite</span>
+      <p class="card-title">Any citation format</p>
+      <p class="card-body">APA, MLA, Chicago, whatever you name, you'll get a properly built citation every time.</p>
+    </div>
+    <div class="card elev-sm">
+      <span class="card-kicker">Export</span>
+      <p class="card-title">Finished bibliography</p>
+      <p class="card-body">Real LaTeX for the whole research trail, ready to render or drop into your paper.</p>
+    </div>
+  </section>
+
+  <section style="background:var(--color-surface); padding:var(--space-8) 0;">
+    <div style="max-width:1280px; margin:0 auto; padding:0 var(--space-6);">
+<span class="tag tag-neutral" style="display:inline-flex; width:max-content; margin-bottom:var(--space-2);">Seed Round</span>
+      <br>
+      <span class="tag tag-accent" style="display:inline-flex; width:max-content; margin-bottom:var(--space-3);">Why now</span>
+      <h2 style="font-size:32px; max-width:640px; margin:0 0 var(--space-3);">Academia runs on citation. We're making that engine cheaper and instant.</h2>
+      <p style="font-size:16px; opacity:0.85; max-width:640px; margin:0 0 var(--space-6);">Every literature review, every paper and every grant proposal lives or dies on its sources, and right now that work is scattered across a dozen sites. Digilib puts it inside the tool researchers already trust, for less than the cost of one textbook a year.</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:var(--space-4);">
+        <div class="card elev-md">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--color-accent-2-200); color:var(--color-accent-2-800); display:flex; align-items:center; justify-content:center;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>
+          <p class="card-title" style="margin-top:var(--space-2);">~$10/year to run</p>
+          <p class="card-body">The LLM cost behind the keyword enhancement is estimated at about $10 a year per user, far more affordable than any subscription research tool on the market.</p>
+        </div>
+        <div class="card elev-md">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--color-accent-200); color:var(--color-accent-800); display:flex; align-items:center; justify-content:center;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path><path d="M7 9l5-5 5 5"></path><path d="M12 4v13"></path></svg></div>
+          <p class="card-title" style="margin-top:var(--space-2);">Lives inside your LLM</p>
+          <p class="card-body">No new app to learn. Digilib connects directly to the LLM you already use, so research happens in the same conversation as the writing.</p>
+        </div>
+        <div class="card elev-md">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--color-accent-2-200); color:var(--color-accent-2-800); display:flex; align-items:center; justify-content:center;"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg></div>
+          <p class="card-title" style="margin-top:var(--space-2);">Built for how academia runs</p>
+          <p class="card-body">Citation is the currency of academic work. By making it fast and correct, Digilib becomes the natural companion for every student and researcher writing today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--color-divider); padding:var(--space-4) var(--space-6); max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+    <div style="font-family:var(--font-heading); font-size:15px;">Digilib — search, cite, export.</div>
+    <div style="display:flex; gap:24px; font-size:14px;">
+      <a href="https://github.com/cars3/digilib-mcp">GitHub</a>
+      <a href="https://github.com/cars3/digilib-mcp/blob/main/README.md">Docs</a>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+
+class Component extends DCLogic {
+}</script>
+</body>
+</html>

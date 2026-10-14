@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-f5260334-b4ed-4d2a-ade6-1555f103ba97/styles.css">
+<script src="_ds/organic-f5260334-b4ed-4d2a-ade6-1555f103ba97/_ds_bundle.js"></script>
+<style>
+  @font-face { font-family: 'Suranna'; src: url('./uploads/Suranna-Regular.ttf') format('truetype'); font-weight: 400; }
+  body { font-size: 16px; }
+  .card-body { font-size: 15px; }
+</style>
+</helmet>
+
+<div style="min-height:100vh; --font-heading:'Suranna', serif; --font-heading-weight:700; --color-bg:#ffffff; --color-surface:#f2f6fb; --color-text:#142a4a; --color-accent:#1e3a5f; --color-accent-2:#3b6ea5; --color-divider:color-mix(in srgb, #142a4a 16%, transparent); --color-neutral-100:#f7f9fb; --color-neutral-900:#101826; --color-accent-100:#eaf1f8; --color-accent-200:#cfe0ee; --color-accent-600:#16283f; --color-accent-700:#122238; --color-accent-800:#16283f; --color-accent-900:#0f1c2c; --color-accent-2-100:#eef4fa; --color-accent-2-200:#d7e6f3; --color-accent-2-800:#1f4368; background:var(--color-bg); color:var(--color-text);">
+
+  <nav class="nav" style="max-width:1280px; margin:0 auto; padding:var(--space-4) var(--space-6);">
+    <div class="nav-brand" style="display:flex; align-items:center; gap:10px; font-family:'Suranna', serif; font-size:26px; font-style:italic;">
+      <div style="width:32px; height:32px; border-radius:50%; background:var(--color-accent); display:flex; align-items:center; justify-content:center; flex:none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-bg)" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+      </div>
+      Digilib
+    </div>
+    <a href="./Digilib Home.dc.html">Home</a>
+    <a href="./Digilib Features.dc.html">Features</a>
+    <a href="./Digilib Setup.dc.html" aria-current="page">Get started</a>
+    <a href="https://github.com/cars3/digilib-mcp" class="btn btn-primary" style="color:#ffffff;">GitHub</a>
+  </nav>
+
+  <section style="max-width:760px; margin:0 auto; padding:var(--space-8) var(--space-6) var(--space-6); text-align:center;">
+    <span class="tag tag-accent-2" style="margin-bottom:var(--space-3); display:inline-flex;">Free & open-source</span>
+    <h1 style="font-size:clamp(32px,4.5vw,44px); margin:var(--space-3) 0 var(--space-3);">Add Digilib to Claude in a minute</h1>
+    <p style="font-size:16px; opacity:0.85; margin:0;">Copy this into your <code style="font-family:monospace;">.mcp.json</code> and reload your project.</p>
+  </section>
+
+  <section style="max-width:760px; margin:0 auto; padding:0 var(--space-6) var(--space-8);">
+    <div style="background:var(--color-neutral-900); border-radius:var(--radius-lg); padding:var(--space-4) var(--space-6) var(--space-6); font-family:monospace; font-size:13.5px; line-height:1.8; color:var(--color-neutral-100); overflow-x:auto;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:var(--space-3);">
+        <span style="color:var(--color-accent-2-400);">// .mcp.json</span>
+        <button onclick="{{ copySnippet }}" class="btn btn-primary" style="font-size:12px; padding:6px 14px;">{{ copyLabel }}</button>
+      </div>
+<div>&#123;</div>
+<div>&nbsp;&nbsp;"mcpServers": &#123;</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;"digilib": &#123;</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"command": "/path/to/venv/bin/python",</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"args": ["-m", "digilib_mcp.server"],</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"cwd": "/path/to/digilib-mcp"</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&#125;</div>
+<div>&nbsp;&nbsp;&#125;</div>
+<div>&#125;</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:var(--space-3); margin-top:var(--space-6);">
+      <div class="card elev-sm">
+        <p class="card-title" style="font-size:16px;">1. Install</p>
+        <p class="card-body">uv pip install -r requirements.txt</p>
+      </div>
+      <div class="card elev-sm">
+        <p class="card-title" style="font-size:16px;">2. Configure</p>
+        <p class="card-body">Add the snippet above to .mcp.json at your project root.</p>
+      </div>
+      <div class="card elev-sm">
+        <p class="card-title" style="font-size:16px;">3. Reload</p>
+        <p class="card-body">Approve the digilib server in Claude Code or Claude Desktop.</p>
+      </div>
+    </div>
+
+    <div style="display:flex; justify-content:center; margin-top:var(--space-6);">
+      <a href="https://github.com/cars3/digilib-mcp" class="btn btn-secondary" style="font-size:15px; padding:14px 30px;">Read full setup docs →</a>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--color-divider); padding:var(--space-4) var(--space-6); max-width:1280px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
+    <div style="font-family:var(--font-heading); font-size:15px;">Digilib — search, cite, export.</div>
+    <div style="display:flex; gap:24px; font-size:14px;">
+      <a href="https://github.com/cars3/digilib-mcp">GitHub</a>
+      <a href="https://github.com/cars3/digilib-mcp/blob/main/README.md">Docs</a>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { copyLabel: 'Copy' };
+  renderVals() {
+    return {
+      copyLabel: this.state.copyLabel,
+      copySnippet: () => {
+        const snippet = '{\n  "mcpServers": {\n    "digilib": {\n      "command": "/path/to/venv/bin/python",\n      "args": ["-m", "digilib_mcp.server"],\n      "cwd": "/path/to/digilib-mcp"\n    }\n  }\n}';
+        navigator.clipboard?.writeText(snippet);
+        this.setState({ copyLabel: 'Copied!' });
+        setTimeout(() => this.setState({ copyLabel: 'Copy' }), 1800);
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "digilib-mcp"
+version = "0.1.0"
+description = "DigiLIB (digital librarian) as an MCP server: multi-source academic paper and book search with LaTeX research export, for any AI agent. No API keys required."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["mcp", "mcp-server", "ai-agents", "digital-librarian", "research", "literature-search", "arxiv", "openalex", "crossref", "semantic-scholar", "latex"]
+
+dependencies = [
+    "mcp[cli]",
+    "httpx",
+    "requests",
+    "uvicorn",
+]
+
+[project.scripts]
+digilib-mcp = "digilib_mcp.server:main"
+
+[project.urls]
+Repository = "https://github.com/cars3/digilib-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["digilib_mcp"]
