@@ -1,6 +1,8 @@
 mcp[cli]
 httpx
 requests
+# TLS trust store; 2026.10.19+ distrusts the compromised eMudhra intermediates (Oct 2026).
+certifi>=2026.10.19
 # Required for streamable-http transport (MCP gateway / Railway hosting).
 # Not needed for stdio-only use, but harmless.
 uvicorn
