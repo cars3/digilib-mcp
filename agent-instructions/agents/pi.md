@@ -16,5 +16,5 @@ pi mcp list      # digilib should appear with 3 tools
 
 ## Skills
 
-Working inside the digilib-mcp checkout, Pi auto-discovers the skill from
-`agent-instructions/.agents/skills/digilib/` and exposes it as `/skill:digilib`.
+The bundled skill lives at `agent-instructions/SKILL.md`; Pi can load it
+directly when working inside the checkout.

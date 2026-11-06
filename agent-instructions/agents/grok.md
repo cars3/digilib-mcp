@@ -32,4 +32,4 @@ grok mcp doctor digilib     # connectivity check
   and project `.mcp.json` files (compatibility), merged below its own
   `config.toml`.
 - Working inside the digilib-mcp checkout? The bundled skill is at
-  `.grok/skills/digilib/SKILL.md`.
+  `agent-instructions/SKILL.md`.

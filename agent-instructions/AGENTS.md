@@ -10,11 +10,9 @@ with, or on this repository. It lives in `agent-instructions/` together with
 the agent skill and the per-agent connection guides.
 
 The repository root carries thin pointers (`AGENTS.md`, `CLAUDE.md`,
-`CODEX.md`, `KIMI.md`, `OPENCODE.md`) that import this file, plus symlinked
-agent directories (`.agents`, `.claude`, `.antigravitycli`, `.grok`,
-`.kimi`, `.opencode`, `.qwen`) that point into this folder. Those exist only
-so every agent still auto-discovers the instructions. Edit the files here,
-never the root pointers or symlinks.
+`CODEX.md`, `KIMI.md`, `OPENCODE.md`) that import this file. They exist only
+so every agent still discovers the instructions; there are no per-agent
+skill directories. Edit the files here, never the root pointers.
 
 ## What this server provides
 
@@ -88,15 +86,15 @@ verification step.
 - For a durable writeup, call `export_research_tool`, save the returned
   LaTeX to a `.tex` file, and compile with `pdflatex` if available.
 
-Full guidance: `agent-instructions/.agents/skills/digilib/SKILL.md`.
+Full guidance: `agent-instructions/SKILL.md`.
 
 ## Repository layout
 
 ```
-agent-instructions/                agent instructions: readmes, skill, connection guides
+agent-instructions/                agent instructions: readmes, skill, guides
 agent-instructions/AGENTS.md       this file, the canonical guide
+agent-instructions/SKILL.md        the one canonical agent skill
 agent-instructions/agents/         per-agent connection guides
-agent-instructions/.agents/skills/digilib/  canonical agent skill
 digilib_mcp/                       the server (server.py, config.py, services/, digiexport.py, auth.py)
 digilib_mcp/context/               researcher.md — the DigiLIB persona prompt
 demo/                              demo recording (Claude Desktop)
@@ -109,8 +107,5 @@ pyproject.toml                     packaging (console script: digilib-mcp)
 - Keep it keyless: no required API keys, no paid services, no secrets.
 - No personal data, personal emails, or machine-specific paths in the repo.
 - Python 3.10+; stdio is the default transport, `streamable-http` optional.
-- The root agent directories (`.claude`, `.antigravitycli`, `.grok`, `.kimi`,
-  `.opencode`, `.qwen`) are symlinks to `agent-instructions/`. Inside that
-  folder, each agent's `skills/digilib/SKILL.md` is a symlink to
-  `.agents/skills/digilib/SKILL.md` — edit the canonical skill only, never
-  the symlinks or the root pointers.
+- The same `AGENTS.md` and `SKILL.md` serve every agent. Do not add
+  per-agent skill directories or duplicate the skill; update this folder.

@@ -19,9 +19,8 @@ OpenCode uses the `mcp` key (not `mcpServers`), and every entry needs a
 }
 ```
 
-Working inside the digilib-mcp checkout, the bundled slash command
-`.opencode/commands/digilib.md` is auto-registered — `/digilib` loads the
-skill.
+Working inside the digilib-mcp checkout, the skill lives at
+`agent-instructions/SKILL.md`; OpenCode can load it from there when asked.
 
 ## Verify
 

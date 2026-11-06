@@ -89,8 +89,8 @@ Pi, Hermes, legacy Gemini CLI — and a
 > on information retrieval, and export a literature review with APA
 > citations."
 
-The agent calls the tools — and if it supports skills, it follows the
-bundled digilib skill automatically.
+The agent calls the tools. If it supports skills, point it at
+`agent-instructions/SKILL.md` for the query-crafting workflow.
 
 ## What it exposes
 
@@ -181,9 +181,8 @@ This repository carries native instructions for coding agents:
 - `agent-instructions/` — all agent-facing material in one folder
 - `agent-instructions/AGENTS.md` — the canonical guide, imported by the
   root `CLAUDE.md`, `CODEX.md`, `OPENCODE.md`, and `KIMI.md` pointers
-- `agent-instructions/.agents/skills/digilib/SKILL.md` — the canonical
-  skill, symlinked into each agent's skills directory so every CLI
-  auto-discovers it
+- `agent-instructions/SKILL.md` — the canonical skill, the only skill file
+  in the repo; `AGENTS.md` tells every agent to read it
 - `agent-instructions/agents/` — per-agent connection guides
 
 Open this repo in your agent of choice, and it will know how to set digilib

@@ -32,8 +32,8 @@ agy mcp add digilib -- uvx --from git+https://github.com/cars3/digilib-mcp digil
 
 ## Skills
 
-Working inside the digilib-mcp checkout, Antigravity auto-discovers the
-bundled skill at `.antigravitycli/skills/digilib/SKILL.md`.
+The bundled skill is `agent-instructions/SKILL.md`; point Antigravity at it
+if you want the research workflow loaded.
 
 ## Verify
 

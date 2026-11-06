@@ -28,9 +28,9 @@ Ask naturally: "Search the literature on X with digilib, and pull two books
 on Y." Claude Code calls `search_papers` / `search_books` /
 `export_research_tool` as needed.
 
-Working inside the digilib-mcp checkout? Claude Code also auto-discovers the
-bundled skill at `.claude/skills/digilib/SKILL.md`, which teaches the
-research workflow.
+Working inside the digilib-mcp checkout? The bundled skill at
+`agent-instructions/SKILL.md` teaches the research workflow; reference it
+from `CLAUDE.md` or ask Claude to read it.
 
 ## Verify
 

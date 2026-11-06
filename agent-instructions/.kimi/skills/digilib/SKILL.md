@@ -1,1 +1,0 @@
-../../../.agents/skills/digilib/SKILL.md

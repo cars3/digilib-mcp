@@ -23,5 +23,5 @@ Agent: "Use digilib to search for recent papers on X."
 ## Notes
 
 - Cursor prompts for approval on tool calls by default.
-- Working inside the digilib-mcp checkout, Cursor auto-discovers the bundled
-  skill from the shared `agent-instructions/.agents/skills/digilib/` layout.
+- The bundled skill lives at `agent-instructions/SKILL.md`; reference it
+  from a Cursor rule if you want it loaded automatically.
