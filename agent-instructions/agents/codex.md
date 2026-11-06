@@ -31,9 +31,8 @@ Headless workers use `codex exec`:
 codex exec "Use digilib to find three recent papers on speculative decoding and summarize them"
 ```
 
-Working inside the digilib-mcp checkout, Codex loads the root `AGENTS.md`,
-which imports `agent-instructions/AGENTS.md` — that points at the digilib
-skill.
+Working inside the digilib-mcp checkout, point Codex at
+`agent-instructions/AGENTS.md` — that points at the digilib skill.
 
 ## Verify
 

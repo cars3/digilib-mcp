@@ -29,8 +29,8 @@ on Y." Claude Code calls `search_papers` / `search_books` /
 `export_research_tool` as needed.
 
 Working inside the digilib-mcp checkout? The bundled skill at
-`agent-instructions/SKILL.md` teaches the research workflow; reference it
-from `CLAUDE.md` or ask Claude to read it.
+`agent-instructions/SKILL.md` teaches the research workflow; ask Claude to
+read it.
 
 ## Verify
 
