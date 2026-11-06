@@ -1,3 +1,3 @@
-@AGENTS.md
+@agent-instructions/AGENTS.md
 
-<!-- Claude Code: full project context is imported from AGENTS.md above. -->
+<!-- Claude Code: full project context is imported from agent-instructions/AGENTS.md. -->

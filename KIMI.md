@@ -1,3 +1,3 @@
-@AGENTS.md
+@agent-instructions/AGENTS.md
 
-<!-- Kimi: full project context is imported from AGENTS.md above. -->
+<!-- Kimi: full project context is imported from agent-instructions/AGENTS.md. -->

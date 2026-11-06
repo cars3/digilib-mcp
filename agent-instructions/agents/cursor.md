@@ -24,4 +24,4 @@ Agent: "Use digilib to search for recent papers on X."
 
 - Cursor prompts for approval on tool calls by default.
 - Working inside the digilib-mcp checkout, Cursor auto-discovers the bundled
-  skill from the shared `.agents/skills/digilib/` layout.
+  skill from the shared `agent-instructions/.agents/skills/digilib/` layout.

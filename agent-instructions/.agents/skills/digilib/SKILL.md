@@ -59,5 +59,6 @@ stands on its own otherwise.
 
 ## Connecting digilib to an agent
 
-Registration snippets for every supported agent live in `docs/agents/` of
-this repository. Canonical instructions: `AGENTS.md`.
+Registration snippets for every supported agent live in
+`agent-instructions/agents/` of this repository. Canonical instructions:
+`agent-instructions/AGENTS.md`.

@@ -78,10 +78,10 @@ claude mcp add digilib -- uvx --from git+https://github.com/cars3/digilib-mcp di
 ```
 
 One-page guides with each agent's exact config file and snippet live in
-[docs/agents/](docs/agents/): Claude Code, Claude Desktop, Codex,
+[agent-instructions/agents/](agent-instructions/agents/): Claude Code, Claude Desktop, Codex,
 Antigravity, Cursor, OpenCode, Windsurf, Qwen Code, Kimi, Grok, Copilot CLI,
 Pi, Hermes, legacy Gemini CLI — and a
-[generic guide](docs/agents/generic.md) for any other MCP client.
+[generic guide](agent-instructions/agents/generic.md) for any other MCP client.
 
 ### 3. Ask
 
@@ -178,12 +178,13 @@ the results, and does the synthesis. digilib is the librarian's toolkit.
 
 This repository carries native instructions for coding agents:
 
-- `AGENTS.md` — the canonical guide, imported by `CLAUDE.md`, `CODEX.md`,
-  `OPENCODE.md`, and `KIMI.md`
-- `.agents/skills/digilib/SKILL.md` — the canonical skill, symlinked into
-  `.claude/`, `.antigravitycli/`, `.grok/`, `.kimi/`, `.opencode/`, and
-  `.qwen/` so every CLI auto-discovers it
-- `docs/agents/` — per-agent connection guides
+- `agent-instructions/` — all agent-facing material in one folder
+- `agent-instructions/AGENTS.md` — the canonical guide, imported by the
+  root `CLAUDE.md`, `CODEX.md`, `OPENCODE.md`, and `KIMI.md` pointers
+- `agent-instructions/.agents/skills/digilib/SKILL.md` — the canonical
+  skill, symlinked into each agent's skills directory so every CLI
+  auto-discovers it
+- `agent-instructions/agents/` — per-agent connection guides
 
 Open this repo in your agent of choice, and it will know how to set digilib
 up.
@@ -309,7 +310,7 @@ runs unauthenticated — fine for local/LAN testing, not for a public URL.
 ## Troubleshooting
 
 - **The agent doesn't show digilib.** Check your agent's guide in
-  [docs/agents/](docs/agents/) — the config paths differ per agent, and some
+  [agent-instructions/agents/](agent-instructions/agents/) — the config paths differ per agent, and some
   need an absolute path to `uvx`. Most clients only read their config at
   launch, so restart the agent after editing.
 - **A source shows `=0` in the result header.** Each source fails

@@ -1,3 +1,3 @@
-@AGENTS.md
+@agent-instructions/AGENTS.md
 
-<!-- Codex: full project context is imported from AGENTS.md above. -->
+<!-- Codex: full project context is imported from agent-instructions/AGENTS.md. -->
