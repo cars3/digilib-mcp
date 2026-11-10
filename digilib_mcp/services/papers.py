@@ -198,8 +198,15 @@ class PaperService:
             counts[name] = len(resp)
         return flat, counts
 
-    async def search(self, keywords, size=10, year_from=None, year_to=None) -> str:
-        """Search all keywords across all sources concurrently, dedupe, format."""
+    async def search_records(
+        self, keywords, size=10, year_from=None, year_to=None
+    ) -> tuple[list, dict]:
+        """Fan out across every source; return (deduped records, per-source totals).
+
+        Split out of search() so callers with their own presentation layer (the
+        DigiLIB web app) can render the unified records directly instead of
+        parsing the formatted text.
+        """
         async with httpx.AsyncClient(timeout=HTTP_TIMEOUT, follow_redirects=True) as client:
             tasks = [
                 self._search_one_keyword(client, kw, size, year_from, year_to)
@@ -213,7 +220,13 @@ class PaperService:
             for name, count in counts.items():
                 totals[name] += count
 
-        combined = dedupe_by_title(flat)
+        return dedupe_by_title(flat), totals
+
+    async def search(self, keywords, size=10, year_from=None, year_to=None) -> str:
+        """Search all keywords across all sources concurrently, dedupe, format."""
+        combined, totals = await self.search_records(
+            keywords, size=size, year_from=year_from, year_to=year_to
+        )
         header = (
             f"Paper search results for: {', '.join(keywords)}"
             f" (per-source hits: {', '.join(f'{k}={v}' for k, v in totals.items())})"
